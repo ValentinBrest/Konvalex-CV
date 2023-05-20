@@ -1,0 +1,9 @@
+
+.main__title {
+    font-weight: 700;
+    font-size: 22px;
+    background: #2d8b9b;
+    color:azure;
+    padding: 5px 0 5px 20px;
+    letter-spacing: 2px;
+}

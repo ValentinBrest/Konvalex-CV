@@ -1,0 +1,24 @@
+.main__lang-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__lang-circle {
+    display: flex;
+    align-items: center;
+    
+}
+
+.main__lang-circle .circle {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid aliceblue;
+    margin-left: 5px;
+}
+
+.main__lang-circle .circle.active {
+    background-color: aliceblue;
+}

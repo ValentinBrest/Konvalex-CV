@@ -1,0 +1,12 @@
+.main__skills {
+    padding-bottom: 30px;
+}
+
+.main__skills-box {
+    padding-left: 20px;
+}
+
+.main__skills-box li {
+    padding-top: 15px;
+    padding-bottom: 5px;
+}

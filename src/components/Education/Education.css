@@ -1,0 +1,32 @@
+.main-right-block {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.main__right-wrap {
+    /* display: grid; */
+    /* grid-template-columns: 0.7fr 2fr; */
+    /* grid-template-rows: auto;
+    grid-auto-rows: auto; */
+    margin-right: 20px;
+}
+
+.main__right-data {
+
+}
+
+.main__right-descr {
+    margin-bottom: 10px;
+}
+
+.main__right-descr span {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.main__right-org {
+    font-style: italic;
+}

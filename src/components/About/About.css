@@ -1,0 +1,12 @@
+.main__right-about {
+    width: 100%;
+}
+.main__right-hobby {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.main__right-hobby ul {
+    margin: 0;
+}
