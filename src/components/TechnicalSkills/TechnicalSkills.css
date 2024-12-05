@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     margin: 0;
+    padding-left: 20px;
 }
 
 .main__right-wrap {
@@ -27,9 +28,4 @@
 
 .main__right-org {
     font-style: italic;
-}
-
-.main__right-work {
-    list-style-type: circle;
-    margin-left: 40px;
 }

@@ -2,36 +2,34 @@ import React from 'react';
 import './About.css';
 import { TitleDivider } from '../TitleDivider/TitleDivider';
 
-
 export const About = () => {
-  return (
-    <>
-        <TitleDivider img={"icons/right/about.svg"}>О себе</TitleDivider>
+    return (
+        <>
+            <TitleDivider img={'icons/right/about.svg'}>About me</TitleDivider>
 
-        <div className="main__right-about">
-                    <div className="main__right-about_d">
-                     Люблю моделировать, чертить, создавать афишы, логотипы, визитки.
-                     Интересуюсь VFX, Game dev, motion design, лаконичным дизайном, юзабилити и логикой сайта.
+            <div className="main__right-about">
+                <div className="main__right-about_d">
+                    In my free time, I improve my English and read additional
+                    programming literature.
+                </div>
+                <div class="main__right-hobby">
+                    <div>
+                        Also I enjoy:
+                        <ul>
+                            <li>playing football &#9917;</li>
+                            <li>swimming &#127946;</li>
+                            <li>cycling &#128692;</li>
+                        </ul>
                     </div>
-                    <div className="main__right-hobby"> 
-                        <div>
-                                Также я: 
-                            <ul>
-                                <li>терпеливый &#128526;</li>
-                                <li>усидчивый &#128188;</li>
-                                <li>занимаюсь спортом &#128692;</li>
-                            </ul>
-                        </div>
-                        <div>
-                                <i>Мои хобби:</i>
-                            <ul>
-                                <li>пишу книгу &#128213;</li>
-                                <li>создаю музыку &#127928;</li>
-                            </ul>
-                        </div>
+                    <div>
+                        <i>My Hobbies:</i>
+                        <ul>
+                            <li>guitar playing &#127928;</li>
+                            <li>dancing &#128378;</li>
+                        </ul>
                     </div>
                 </div>
-    </>
-    
-  )
-}
+            </div>
+        </>
+    );
+};

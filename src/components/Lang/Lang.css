@@ -6,11 +6,10 @@
 .main__lang-circle {
     display: flex;
     align-items: center;
-    
 }
 
 .main__lang-circle .circle {
-    content: "";
+    content: '';
     display: block;
     width: 15px;
     height: 15px;
