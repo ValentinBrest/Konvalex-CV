@@ -8,7 +8,7 @@ export const LeftSide = () => {
     return (
         <div className="main__left">
             <div>
-                <img className="main__photo" src="image/1.jpg" alt="my photo" />
+                <img className="main__photo" src="image/1.jpg" alt="avatar" />
                 <Contacts />
                 <Lang />
                 <Skills />
