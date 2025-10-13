@@ -6,7 +6,7 @@ import { experience } from '../../data/expirience';
 export const Experience = () => {
     return (
         <>
-            <TitleDivider img={'icons/right/bag.svg'}>Experience</TitleDivider>
+            <TitleDivider img={'icons/right/bag.svg'}>Work Experience</TitleDivider>
 
             <ul className="main-right-block">
                 {experience.map((item) => (
