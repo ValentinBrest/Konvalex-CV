@@ -1,10 +1,26 @@
 export const experience = [
     {
-        proffession: 'Software developer',
+        proffession: 'Middle Frontend Developer',
         companyName: 'Epolsoft',
-        from: '01.12.2022',
-        to: 'current time',
-        description:
-            'Highly skilled and motivated front-end developer with 3+ years of experience in creating user-friendly and visually appealing web interfaces. Seeking a mid-level position to leverage my expertise in front-end technologies and contribute to the development of innovative web solutions.',
+        from: 'Декабрь 2022',
+        to: 'текущее время',
+        description: [
+            'Реализовывал кастомные компоненты с помощью React + Antd',
+            'Оптимизировал производительность приложения, сократил время первоначальной загрузки на 40% за счет code splitting и lazy loading',
+            'Интегрировал frontend с REST API',
+            'Участвовал в код-ревью, рефакторинге legacy кода и внедрении лучших практик',
+            'Участвовал в планировании спринтов'
+        ],
+    },
+    {
+        proffession: 'Junior Frontend Developer',
+        companyName: 'Web Go',
+        from: 'Май 2022',
+        to: 'Декабрь 2022',
+        description: [
+            'Создал библиотеку переиспользуемых UI-компонентов, что сократило время разработки стандартных элементов',
+            'Интегрировал frontend с бэкендом через REST API, реализовал обработку ошибок и состояния загрузки',
+            'Участвовал в ежедневных стендапах'
+        ],
     },
 ];

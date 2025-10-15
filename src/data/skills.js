@@ -1,23 +1,38 @@
-export const skills = [
-    'HTML',
-    'CSS (SASS/SCSS, css-modules)',
-    'JavaScript (Fundamentals, ES6+, DOM, JSON, Asynchronous JavaScript)',
+export const frontend = [
+    'JavaScript (ES6+)',
+    'TypeScript',
     'React',
+    'Next JS',
+    'HTML5',
+    'CSS3/SCSS/CSS Modules',
+]
+
+export const tools = [
+    'Git', 
+    'Webpack', 
+    'Vite',
+    'Jest', 
+    'Cypress',
+    'Figma', 
+    'Storybook',
+    'Husky',
+    'Eslint', 
+    'Prettier', 
+    'Stylelint',
+    'FSD'
+]
+
+export const library = [
     'React Router',
-    'Redux, Redux Toolkit, Easy-peasy',
-    'TypeScript, Babel',
-    'Webpack, Vite',
-    'Eslint, Prettier, Stylelint',
-    'Jest, Cypress',
-    'Headless UI, Antd',
-    'Feature-Sliced Design',
-    'Figma, Storybook',
-    'Git/GitHub, Husky, Lint-staged',
-    'Visual Studio Code, IntelliJ IDEA',
-];
+    'Redux', 
+    'Redux Toolkit', 
+    'Easy-peasy',
+    'Headless UI', 
+    'Antd',
+    'Axios'
+]
 
 export const technicalSkills = [
-    'Programming Languages: HTML, CSS, JavaScript.',
 
     'Front-End Frameworks/Libraries: React + Typescript, Antd.',
 

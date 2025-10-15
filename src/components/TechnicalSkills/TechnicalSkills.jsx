@@ -1,24 +1,16 @@
-import React from 'react';
-import './TechnicalSkills.css';
-import { TitleDivider } from '../TitleDivider/TitleDivider';
-import { technicalSkills } from '../../data/skills';
+import { RightItemBlock } from '../RightItemBlock/RightItemBlock';
+import { SkillsItem } from './SkillsItem/SkillsItem';
+import { frontend, library, tools } from '../../data/skills';
+import cl from './TechnicalSkills.module.css';
 
 export const TechnicalSkills = () => {
     return (
-        <>
-            <TitleDivider img={'icons/right/university.svg'}>
-                Technical Skills
-            </TitleDivider>
-
-            <div className="main-right-block">
-                <div className="main__right-wrap">
-                    <div className="main__right-descr">
-                        {technicalSkills.map((item, index) => (
-                            <li key={index}>{item}</li>
-                        ))}
-                    </div>
-                </div>
+        <RightItemBlock img={'icons/right/university.svg'} title="Навыки"> 
+            <div className={cl.wrap}>
+                <SkillsItem title={'Frontend'} tags={frontend} />
+                <SkillsItem title={'Библиотека & State'} tags={library} />
+                <SkillsItem title={'Инструменты'} tags={tools} />
             </div>
-        </>
+        </RightItemBlock>
     );
 };

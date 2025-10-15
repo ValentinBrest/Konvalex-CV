@@ -1,34 +1,31 @@
-import React from 'react';
-import './Experience.css';
-import { TitleDivider } from '../TitleDivider/TitleDivider';
+import cl from './Experience.module.css';
+import { RightItemBlock } from '../RightItemBlock/RightItemBlock';
 import { experience } from '../../data/expirience';
 
 export const Experience = () => {
     return (
-        <>
-            <TitleDivider img={'icons/right/bag.svg'}>Work Experience</TitleDivider>
-
-            <ul className="main-right-block">
+        <RightItemBlock title={'Опыт работы'} img={'icons/right/bag.svg'}>
+            <ul className={cl.list}>
                 {experience.map((item) => (
-                    <li className="main__right-wrap">
-                        <div class="main__right-descr">
-                            <span>
+                    <li className={cl.job}>
+                            <span className={cl.descr}>
                                 {item.proffession}
-                                <span class="main__right-org">
-                                    - "{item.companyName}" -
+                                <span className={cl.org}>
+                                    {` - "${item.companyName}" - `}
                                 </span>
-                                <span class="main__right-data">
+                                <span className={cl.period}>
                                     [{item.from} - {item.to}]
                                 </span>
                             </span>
 
-                            <div class="main__right-work">
-                                {item.description}
+                            <div className={cl.done}>
+                                {item.description.map((item) => (
+                                    <li>{item}</li>
+                                ))}
                             </div>
-                        </div>
                     </li>
                 ))}
             </ul>
-        </>
+        </RightItemBlock>
     );
 };

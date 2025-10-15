@@ -1,0 +1,29 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.job {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.descr {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.org {
+    font-style: italic;
+}
+
+.period {
+    font-size: 18px;
+}
+
+.done {
+    list-style-type: circle;
+    margin-left: 40px;
+}

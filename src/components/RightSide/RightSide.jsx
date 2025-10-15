@@ -1,10 +1,6 @@
-import React from 'react';
-import './RightSide.css';
+import { summary } from '../../data/summary';
 import { Experience } from '../Experience/Experience';
-import { Qualifications } from '../Qualifications/Qualifications';
-import { TechnicalSkills } from '../TechnicalSkills/TechnicalSkills';
-import { Projects } from '../Projects/Projects';
-import { About } from '../About/About';
+import cl from './RightSide.module.css';
 
 function calculateAge(birthDate) {
     const today = new Date();
@@ -13,7 +9,6 @@ function calculateAge(birthDate) {
     let age = today.getFullYear() - birth.getFullYear();
     const monthDiff = today.getMonth() - birth.getMonth();
     
-    // Если день рождения еще не наступил в этом году, вычитаем 1 год
     if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birth.getDate())) {
         age--;
     }
@@ -23,35 +18,33 @@ function calculateAge(birthDate) {
 
 export const RightSide = () => {
     return (
-        <div className="main__right">
-            <div className="container__right">
-                <h1 className="main__right-title">
-                    Konopatsky <br /> Valentin Alexandrovich{' '}
+        <div className={cl.right}>
+                <h1 className={cl.title}>
+                    Конопацкий <br /> Валентин Александрович{' '}
                 </h1>
-                <h2 className="main__right-sub-title">
+                <h2 className={cl.subTitle}>
                     {' '}
                     Frontend Developer
                 </h2>
-                <div className="main__right-location">
-                    <div className="main__right-info">
-                        <img src="icons/right/map.svg" alt="city" />
-                        <span>Brest</span>
+                <div className={cl.location}>
+                    <div className={cl.info}>
+                        <img className={cl.icon} src="icons/right/map.svg" alt="city" />
+                        <span>Брест</span>
                     </div>
-                    <div className="main__right-info">
+                    <div className={cl.info}>
                         <img
-                            className=""
+                            className={cl.icon}
                             src="icons/right/info.svg"
                             alt="old"
                         />
-                        <span>{calculateAge('1995-10-03')} years old</span>
+                        <span>{calculateAge('1995-10-03')} лет</span>
                     </div>
                 </div>
+                <div className={cl.summary}>
+                    <div>{summary.aboutMe}</div>
+                    <div>{summary.lookingFor}</div>
+                </div>
                 <Experience />
-                <Qualifications />
-                <TechnicalSkills />
-                <About />
-                <Projects />
-            </div>
         </div>
     );
 };

@@ -1,0 +1,10 @@
+.right {
+    padding: 10px 35px 20px 40px;
+}
+
+
+@media (max-width: 576px) {
+    .right {
+        padding: 10px 10px 10px 15px;
+    }
+}

@@ -1,0 +1,13 @@
+.title {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.tag {
+    padding: 5px 10px;
+    border: 1px solid #babdbe;
+    border-radius: 20px;
+    background-color: #dfdae1;
+    display: inline-block;
+    margin: 5px;
+}
