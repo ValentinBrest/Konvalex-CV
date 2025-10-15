@@ -8,7 +8,7 @@ export const ProjectItem = ({description, title, name, tags , link, linkDemo, ic
                     <img src={icon} className={cl.icon} alt='icon'/>
                     <span className={cl.title}>{title}</span>
                 </div>
-                <a target='_blank' className={cl.link} href={link || linkDemo}>{name}</a>
+                <a target='_blank' rel="noreferrer" className={cl.link} href={link || linkDemo}>{name}</a>
             </div>
             <div className={cl.descr}>
                 {description}
