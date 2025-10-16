@@ -31,16 +31,3 @@ export const library = [
     'Antd',
     'Axios'
 ]
-
-export const technicalSkills = [
-
-    'Front-End Frameworks/Libraries: React + Typescript, Antd.',
-
-    'Version Control Systems: Git, GitHub, GitLab.',
-
-    'Responsive Design and Mobile Development.',
-
-    'Cross-Browser Compatibility.',
-
-    'Testing and Debugging Tools (Chrome DevTools, Jest, Cypress).',
-];
