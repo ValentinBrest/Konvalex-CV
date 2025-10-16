@@ -11,9 +11,6 @@ function App() {
                 <RightSide />
             </div>
             <BottomBlock />
-            <div className={cl.footer}>
-                <p>Удаленная работа • Полная занятость</p>
-            </div>
         </main>
     );
 }

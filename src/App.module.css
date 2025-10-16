@@ -12,14 +12,6 @@
     grid-template-columns: 1.2fr 2fr;
 }
 
-.footer {
-    display: flex;
-    justify-content: center;
-    padding: 20px ;
-    background-color: #2d8b9b;
-    color: azure;
-}
-
 @media (max-width: 768px) {
     .wrap {
         display: flex;
